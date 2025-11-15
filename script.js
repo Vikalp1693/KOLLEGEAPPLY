@@ -1,4 +1,4 @@
-const PIPEDREAM_URL = "https://eodnw12pzbqrlmq.m.pipedream.net"; // keep or replace
+const PIPEDREAM_URL = "https://eodnw12pzbqrlmq.m.pipedream.net";
 
 const el = id => document.getElementById(id);
 
@@ -7,9 +7,9 @@ function showToast(msg, isErr = false){
   if(!toastEl) { console.log('TOAST:', msg); return; }
   toastEl.textContent = msg;
   toastEl.style.background = isErr ? '#c53030' : '#111';
-  // show using class that CSS supports
+ 
   toastEl.classList.add('show');
-  // hide after 3.5s
+
   setTimeout(()=> toastEl.classList.remove('show'), 3500);
 }
 
@@ -97,16 +97,14 @@ async function openFeesModal(uniId, modalBodyId){
   const modal = container.closest('.modal');
   if(!modal) return;
 
-  // pick fees key correctly
   const feesKey = FEES_KEY_MAP[uniId] || uniId;
   const ufees = (fees && fees[feesKey]) ? fees[feesKey] : {};
 
-  // populate container
   container.innerHTML = '';
   if(!fees || Object.keys(ufees).length === 0){
     container.innerHTML = '<p>No fee info available.</p>';
   } else {
-    // build a table for nicer layout
+    
     const table = document.createElement('table');
     table.className = 'fees-table';
     table.innerHTML = `
