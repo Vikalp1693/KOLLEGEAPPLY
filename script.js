@@ -7,9 +7,12 @@ function showToast(msg, isErr = false){
   if(!toastEl) { console.log('TOAST:', msg); return; }
   toastEl.textContent = msg;
   toastEl.style.background = isErr ? '#c53030' : '#111';
-  toastEl.classList.remove('hidden');
-  setTimeout(()=> toastEl.classList.add('hidden'), 3500);
+  // show using class that CSS supports
+  toastEl.classList.add('show');
+  // hide after 3.5s
+  setTimeout(()=> toastEl.classList.remove('show'), 3500);
 }
+
 
 async function fetchJSON(path){
   try{
