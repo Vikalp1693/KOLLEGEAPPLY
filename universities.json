@@ -1,0 +1,32 @@
+[
+  {
+    "id": "uni1",
+    "name": "Lovely Professional University",
+    "overview": "Lovely Professional University (LPU) combines strong academic learning with extensive industry internships, ensuring students gain both theoretical knowledge and real-world practical experience.",
+    "courses": [
+      {"code": "BCA", "name": "BCA (Bachelor of Computer Applications)", "duration": "3 yrs"},
+      {"code": "MCA", "name": "MCA (Master of Computer Applications)", "duration": "2 yrs"},
+      {"code": "BTech", "name": "B.Tech Computer Science and Engineering", "duration": "4 yrs"},
+      {"code": "MBA", "name": "MBA (Master of Business Administration)", "duration": "2 yrs"},
+      {"code": "BBA", "name": "BBA (Bachelor of Business Administration)", "duration": "3 yrs"}
+    ],
+    "placements": {"avgPackage":"4.0 LPA","top":"12.0 LPA"},
+    "facilities": ["Hostel","Computer Labs","Library","Sports Complex"],
+    "brochure":"lpu.pdf"
+  },
+  {
+    "id": "uni2",
+    "name": "Chandigarh University",
+    "overview": "Chandigarh University (CU) integrates quality academic education with robust industry internship opportunities, helping students build both strong theoretical foundations and practical skills.",
+    "courses": [
+      {"code": "BCA", "name": "BCA (Bachelor of Computer Applications)", "duration": "3 yrs"},
+      {"code": "MCA", "name": "MCA (Master of Computer Applications)", "duration": "2 yrs"},
+      {"code": "BTech", "name": "B.Tech Computer Science and Engineering", "duration": "4 yrs"},
+      {"code": "BBA", "name": "BBA (Bachelor of Business Administration)", "duration": "3 yrs"},
+      {"code": "MBA", "name": "MBA (Master of Business Administration)", "duration": "2 yrs"}
+    ],
+    "placements": {"avgPackage":"3.8 LPA","top":"10.5 LPA"},
+    "facilities": ["Hostel","Transport","Career Cell"],
+    "brochure":"cu.pdf"
+  }
+]

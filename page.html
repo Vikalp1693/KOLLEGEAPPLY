@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>University Landing page - 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <h1 class="brand">
+        <img src="cu logo.jpg" alt="CU Logo" class="logo" />
+        <span class="brand-text">Chandigarh University</span>
+      </h1>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Landing 1</a>
+        <a href="page.html" class="active">Landing 2</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="card hero">
+      <div class="hero-inner">
+        <h2>Chandigarh University — Future-ready learning</h2>
+        <p id="overview2" class="lead">Loading...</p>
+
+        <div class="quick-actions">
+          <button id="openFees2" class="btn-primary" aria-controls="feesModal2" aria-expanded="false">Check Course-wise Fees</button>
+          <a class="btn-outline" href="cu.pdf" download>Download Brochure</a>
+        </div>
+      </div>
+
+      <div class="mt">
+        <h3>Courses</h3>
+        <ul id="courses2" class="list-compact" aria-live="polite"></ul>
+
+        <h3 class="mt">Placements</h3>
+        <p id="placements2"></p>
+      </div>
+    </section>
+
+    <aside class="card aside-card">
+      <h3>Apply / Request Info</h3>
+      <form id="leadForm2" novalidate>
+        <label for="fullName2">Full Name</label>
+        <input id="fullName2" name="fullName" type="text" placeholder="Your full name" required />
+
+        <label for="email2">Email</label>
+        <input id="email2" name="email" type="email" placeholder="name@example.com" required />
+
+        <label for="phone2">Phone</label>
+        <input id="phone2" name="phone" type="tel" placeholder="98765 43210" pattern="[0-9]{10}" maxlength="10" required />
+
+        <label for="state2">State</label>
+        <input id="state2" name="state" type="text" placeholder="Ex: Punjab" />
+
+        <label for="courseSelect2">Course Interested</label>
+        <select id="courseSelect2" name="course">
+          <option value="">-- select --</option>
+        </select>
+
+        <label for="intake2">Intake Year</label>
+        <input id="intake2" name="intake" placeholder="e.g. 2026" />
+
+        <label class="consent" for="consent2">
+          <input id="consent2" name="consent" type="checkbox" /> I consent to be contacted
+        </label>
+
+        <button type="submit" class="btn-primary full">Apply Now</button>
+        <div id="formMsg2" class="form-msg" aria-live="polite"></div>
+      </form>
+    </aside>
+  </main>
+
+  <div id="feesModal2" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="feesTitle2" aria-hidden="true">
+    <div class="modal-inner" role="document">
+      <button id="closeModal2" class="modal-close" aria-label="Close">×</button>
+      <h2 id="feesTitle2">Course-wise Fees</h2>
+      <div id="modalBody2" class="modal-body">Loading...</div>
+      <div class="modal-actions">
+        <button id="modalOk2" class="btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
